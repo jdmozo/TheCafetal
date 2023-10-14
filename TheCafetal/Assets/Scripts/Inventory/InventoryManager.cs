@@ -9,10 +9,7 @@ namespace jdmozo.Inventory
         [SerializeField] private GameObject _itemPrefab;
         [SerializeField] private List<GameObject> _inventorySlots;
 
-        private void Start()
-        {
-            GetInvenotyHUDSlots();
-        }
+        private void Start() => GetInvenotyHUDSlots();
 
         private void GetInvenotyHUDSlots()
         {

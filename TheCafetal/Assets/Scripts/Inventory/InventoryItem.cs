@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 namespace jdmozo.Inventory
@@ -7,6 +8,7 @@ namespace jdmozo.Inventory
     public class InventoryItem : MonoBehaviour
     {
         public InventoryItemData _itemData;
+        public TMP_Text _itemText;
         public int stackSize;
 
         public InventoryItem(InventoryItemData itemData)

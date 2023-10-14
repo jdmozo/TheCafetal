@@ -7,12 +7,13 @@ namespace jdmozo.Player
         public float speed;
 
         private Animator animator;
+        private SpriteRenderer _playerSprite;
 
         private void Start()
         {
             animator = GetComponent<Animator>();
+            _playerSprite = GetComponent<SpriteRenderer>();
         }
-
 
         private void Update()
         {
@@ -20,11 +21,13 @@ namespace jdmozo.Player
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 dir.x = -1;
+                _playerSprite.flipX = true;
                 animator.SetInteger("Direction", 3);
             }
             else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
                 dir.x = 1;
+                _playerSprite.flipX = false;
                 animator.SetInteger("Direction", 2);
             }
 
