@@ -24,7 +24,8 @@ namespace jdmozo.Audio
 
         public void PlayCurrencySFX()
         {
-
+            audioSource.clip = coinSound;
+            audioSource.Play();
         }
 
 

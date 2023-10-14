@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923057426d8c58f4f88b109eea0ef3d7, type: 3}
   m_Name: Door
   m_EditorClassIdentifier: 
-  itemID: 
-  itemName: 
+  itemID: 1001
+  itemName: Door
   itemDescription: 
-  itemIcon: {fileID: 0}
+  itemSellPrice: 5
+  itemBuyPrice: 10
+  itemIcon: {fileID: 21300158, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
   itemPrefab: {fileID: 0}

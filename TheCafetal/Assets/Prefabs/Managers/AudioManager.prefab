@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 3047310447948168318}
-  coinSound: {fileID: 0}
-  pickupSound: {fileID: 0}
-  ChestSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 3b1c4d42581503d47b62ac00ceb62b82, type: 3}
+  pickupSound: {fileID: 8300000, guid: 3b1c4d42581503d47b62ac00ceb62b82, type: 3}
+  ChestSound: {fileID: 8300000, guid: 3b1c4d42581503d47b62ac00ceb62b82, type: 3}
 --- !u!82 &3047310447948168318
 AudioSource:
   m_ObjectHideFlags: 0

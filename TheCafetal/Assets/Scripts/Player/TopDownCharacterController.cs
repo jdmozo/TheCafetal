@@ -16,27 +16,24 @@ namespace jdmozo.Player
 
         private void Update()
         {
-            Vector2 dir = Vector2.zero;
-            if (Input.GetKey(KeyCode.A))
+            Vector2 dir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+            if (dir.x < 0)
             {
-                dir.x = -1;
-                animator.SetInteger("Direction", 3);
+                animator.SetInteger("Direction", 3); // Left
             }
-            else if (Input.GetKey(KeyCode.D))
+            else if (dir.x > 0)
             {
-                dir.x = 1;
-                animator.SetInteger("Direction", 2);
+                animator.SetInteger("Direction", 2); // Right
             }
 
-            if (Input.GetKey(KeyCode.W))
+            if (dir.y > 0)
             {
-                dir.y = 1;
-                animator.SetInteger("Direction", 1);
+                animator.SetInteger("Direction", 1); // Up
             }
-            else if (Input.GetKey(KeyCode.S))
+            else if (dir.y < 0)
             {
-                dir.y = -1;
-                animator.SetInteger("Direction", 0);
+                animator.SetInteger("Direction", 0); // Down
             }
 
             dir.Normalize();
