@@ -19,10 +19,10 @@ PlayerSettings:
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
-  m_SplashScreenOverlayOpacity: 1
+  m_SplashScreenOverlayOpacity: 0.897
   m_SplashScreenAnimation: 1
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -31,7 +31,7 @@ PlayerSettings:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.99999994
     height: 1
   m_SplashScreenBackgroundPortraitUvs:
     serializedVersion: 2
@@ -39,7 +39,11 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+    duration: 2
+  - logo: {fileID: 21300000, guid: b866bf8a892f1ac4eb80e9e381bb1850, type: 3}
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -134,7 +138,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 0.1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -268,7 +272,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 20e634e8abcc648458931ff5a13cb6a3, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: iPhone
     m_Icons:
@@ -749,9 +760,10 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 0}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: a53c705668c12c74c8e7c6460812c959,
+    type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
-  blurSplashScreenBackground: 1
+  blurSplashScreenBackground: 0
   spritePackerPolicy: 
   webGLMemorySize: 256
   webGLExceptionSupport: 1
@@ -787,8 +799,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template_2D
-  metroPackageVersion: 
+  metroPackageName: Template2D
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -796,7 +808,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Template_2D
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: TheCafetal
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
