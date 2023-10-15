@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,8 +6,16 @@ namespace jdmozo.Inventory
 {
     public class Inventory : MonoBehaviour
     {
+        public static Inventory Instance;
+
         public List<InventoryItem> inventory = new List<InventoryItem>();
         private Dictionary<InventoryItemData, InventoryItem> itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
+
+        public static event Action<InventoryItemData> ItemAdded;
+        public static event Action<InventoryItemData> ItemRemoved;
+
+
+        private void Awake() => Instance = this;
 
         private void OnEnable()
         {
@@ -24,6 +33,7 @@ namespace jdmozo.Inventory
             {
                 item.AddToStack();
                 Debug.Log($"{item._itemData.name} total stack is now {item.stackSize}");
+                ItemAdded?.Invoke(itemData);
             }
             else
             {
@@ -44,6 +54,7 @@ namespace jdmozo.Inventory
                 {
                     inventory.Remove(item);
                     itemDictionary.Remove(itemData);
+                    ItemRemoved?.Invoke(itemData);
                 }
             }
         }
