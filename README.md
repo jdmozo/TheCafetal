@@ -2,12 +2,13 @@
 ##### **A Colombian Adventure**
 Unity Senior Developer Bluegravity's test. In this Readme, I aim to provide a comprehensive and detailed description of all the contents used in this project. 
 
+[PDF](https://github.com/jdmozo/TheCafetal/tree/main/Resources/GGD The Caffetian.pdf)
+
 ### Requerimientos técnicos
 ```bash
 Project version: 0.1.0
 Operative System:
     - Windows 10 or Windows 11.
-    - Android 7.1 and later versions.
 ```
 
 ## **Unity Specs**
