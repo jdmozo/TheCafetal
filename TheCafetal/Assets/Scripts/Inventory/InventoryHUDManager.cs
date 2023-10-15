@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using jdmozo.Inventory;
 
-namespace jdmozo.Inventory
+namespace jdmozo.UI
 {
     public class InventoryHUDManager : MonoBehaviour
     {
@@ -11,7 +12,7 @@ namespace jdmozo.Inventory
 
         private void OnEnable()
         {
-            Inventory.ItemAdded += AddItemHUD;
+            InventoryManager.ItemAdded += AddItemHUD;
         }
 
         private void Start() => GetInvenotyHUDSlots();
