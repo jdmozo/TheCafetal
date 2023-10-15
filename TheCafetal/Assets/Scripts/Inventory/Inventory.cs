@@ -30,7 +30,7 @@ namespace jdmozo.Inventory
                 InventoryItem newItem = new InventoryItem(itemData);
                 inventory.Add(newItem);
                 itemDictionary.Add(itemData, newItem);
-                Debug.Log($"{itemData.name} First Item");
+                Debug.Log($"{itemData.name} total stack is now {newItem.stackSize}");
             }
         }
 

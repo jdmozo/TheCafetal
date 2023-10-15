@@ -99,6 +99,8 @@ GameObject:
   - component: {fileID: 4616719885696106401}
   - component: {fileID: 5628018141983903119}
   - component: {fileID: 3386165244438449786}
+  - component: {fileID: 8324172966019175590}
+  - component: {fileID: 5429515755205643261}
   m_Layer: 20
   m_Name: PF Player
   m_TagString: Player
@@ -253,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd146093740c5d43b5909c7913f3109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  _speed: 3
 --- !u!114 &3386165244438449786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,3 +268,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68ba8b57e031f14998070c637ed3474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8324172966019175590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628018141983903104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7667021f4fb2747928eaa9e40dcd19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canOpenStore: 0
+--- !u!114 &5429515755205643261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628018141983903104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b73492366b75a64fa2cac67f3784280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inventoryMenu: {fileID: 0}
+  _shopMenu: {fileID: 0}
+  menuIsOpen: 0
+  openMenus: 0
