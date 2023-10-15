@@ -2,7 +2,7 @@
 ##### **A Colombian Adventure**
 Unity Senior Developer Bluegravity's test. In this Readme, I aim to provide a comprehensive and detailed description of all the contents used in this project. 
 
-[PDF](https://github.com/jdmozo/TheCafetal/tree/main/Resources/GGD The Caffetian.pdf)
+[PDF](https://github.com/jdmozo/TheCafetal/blob/main/Resources/GGD%20The%20Caffetian.pdf)
 
 ### Requerimientos técnicos
 ```bash
