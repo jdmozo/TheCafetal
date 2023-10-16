@@ -1,3 +1,4 @@
+using jdmozo.UI;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,11 +10,14 @@ namespace jdmozo.Inventory
         public static InventoryManager Instance;
 
         public List<InventoryItem> inventory = new List<InventoryItem>();
-        private Dictionary<InventoryItemData, InventoryItem> itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
+        public Dictionary<InventoryItemData, InventoryItem> itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();
 
         public static event Action<InventoryItemData> ItemAdded;
         public static event Action<InventoryItemData> ItemRemoved;
 
+        public int CurrentHUDSelected;
+
+        public InventoryMenu inventoryMenu;
 
         private void Awake() => Instance = this;
 
@@ -41,6 +45,7 @@ namespace jdmozo.Inventory
                 inventory.Add(newItem);
                 itemDictionary.Add(itemData, newItem);
                 Debug.Log($"{itemData.name} total stack is now {newItem.stackSize}");
+                ItemAdded?.Invoke(itemData);
             }
         }
 

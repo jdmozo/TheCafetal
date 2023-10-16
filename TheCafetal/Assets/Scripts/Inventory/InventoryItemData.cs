@@ -12,5 +12,6 @@ namespace jdmozo.Inventory
         public int itemBuyPrice;
         public Sprite itemIcon;
         public GameObject itemPrefab;
+        public Color clothesColor;
     }
 }

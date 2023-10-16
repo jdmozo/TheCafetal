@@ -1,12 +1,15 @@
 using UnityEngine;
 
-namespace jdmozo
+namespace jdmozo.Player
 {
     public class PlayerState : MonoBehaviour
     {
         public static PlayerState Instance;
 
         public bool canOpenStore;
+
+        [SerializeField] private Color _baseColor = Color.white;
+        [SerializeField] private SpriteRenderer _playerSprite;
 
         private void Awake() => Instance = this;
 
@@ -30,6 +33,9 @@ namespace jdmozo
 
         public void CanOpenStore(bool value) => canOpenStore = value;
 
+        public void ChangeClothesColor(Color color) => _playerSprite.color = color;
+
+        public void ChangeClothesColor() => _playerSprite.color = _baseColor;
 
     }
 }

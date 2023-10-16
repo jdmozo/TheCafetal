@@ -1,4 +1,4 @@
-using jdmozo;
+using jdmozo.Player;
 using UnityEngine;
 
 public class ShopInteraction : MonoBehaviour

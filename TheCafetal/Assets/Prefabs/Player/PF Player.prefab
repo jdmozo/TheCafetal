@@ -281,6 +281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canOpenStore: 0
+  _baseColor: {r: 1, g: 1, b: 1, a: 1}
+  _playerSprite: {fileID: 5628018141983903107}
 --- !u!114 &5429515755205643261
 MonoBehaviour:
   m_ObjectHideFlags: 0
